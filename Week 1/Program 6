@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b;
+    char op;
+
+    cout << "Enter a and b value: ";
+    cin >> a >> b;
+
+    cout << "Enter operator: ";
+    cin >> op;
+
+    switch (op)
+    {
+        case '+': cout << "addition: " << a + b;
+                  break;
+        case '-': cout << "subtraction: " << a - b;
+                  break;
+        case '/': cout << "division: " << a / b;
+                  break;
+        case '%': cout << "modulo: " << a % b;
+                  break;
+        default: cout << "Invalid operator";
+    }
+
+    return 0;
+}
